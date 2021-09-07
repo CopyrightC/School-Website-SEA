@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+body{
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+}
+nav{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    height: 4rem;
+    justify-content: center;
+    position: relative;
+    background-color: rgb(222, 219, 228);
+}
+#main_title{
+    position: absolute;
+    top: 1rem;
+    font-family: 'Loto',sans-serif;
+    background-color: rgb(70, 66, 66);
+    border-radius: 0.3rem;
+    padding: 1rem;
+    font-size: 2.6rem;
+    color: rgb(233, 208, 208);
+    margin: 1rem;
+}
+#sub{
+    font-size: 1.5rem;
+    color: rgb(61, 58, 58);
+    background-color: rgb(226, 216, 216);
+    border-radius: 0.3rem;
+    padding: 1rem;
+    width: 60%;
+    position: absolute;
+    top: 10rem;
+}
+.browse{
+    width: 39rem;
+    height: 10rem;
+    background-color: white;
+    position: absolute;
+    border-radius: 0.3rem;
+    bottom: 3rem;
+    display: flex;
+}
+.styledBtn{
+    width: 10rem;
+    height: 3rem;
+    background-color: rgb(238, 235, 232);
+    border-radius: 0.3rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    
+}
+.styledBtn::after{
+    content: '';
+    top: 0;
+    transition: 200ms;
+    z-index: -1;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(52, 105, 179);
+    transform: translateX(-100%);
+}
+.styledBtn:hover:after{
+    transform: translateX(0);
+    
+}
+.styledBtn:hover{
+    color: white;
+}
+.item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 13rem;
+    position: relative;
+}
+.item:not(#last):after{
+    content: '';
+    position: absolute;
+    top: 1.7rem;
+    right: 0;
+    background-color: black;
+    width: 0.1rem;
+    height: 70%;
+}
+.first{
+    width: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    height: calc(100vh - 4rem);
+    background-image: url(https://gngindia.com/wp-content/uploads/2019/11/01.Amir-Education-Society.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#nav_ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+#adm{
+    width:10rem;
+    position: absolute;
+    right: 1rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+}
+.li_nav{
+    margin-left: 1rem;
+    font-family: 'Shadows Into Light',cursive;
+}
+
+.li_nav:hover{
+    cursor: pointer;
+}
+
+.second{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: relative; 
+}
+
+#boyRas{
+    position: absolute;
+    right: 0;
+    height: 100vh;
+    width: 40vw;
+    top: 0rem;
+}
+#sec_main{
+    font-size: 2rem;
+    background-color: rgb(211, 197, 197);
+    height: 5rem;
+    margin-top: 3rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.content{
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#longlongdetail{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 1rem;
+    max-width: 52vw;
+    padding: 2rem;
+    border-radius: .3rem;
+    position: absolute;
+    margin-top: 2rem;
+    background-color: rgb(231, 226, 226);
+}
+
+.img{
+    width: 98.93vw;
+    height: 50vh;
+    background-image: url(https://avp.com/wp-content/themes/wordpress-bootstrap-child/images/2020/membership_home_2020_sm.jpg);
+    background-size: cover;
+    background-position:top;
+}
+
+.third{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#thirdMain{
+    margin-top: 1rem;
+    font-family: 'Anton', sans-serif;
+    font-weight: 5000;
+    background-color:rgb(185, 178, 168) ;
+    padding: 1rem;
+    border-radius: 0.3rem;
+}
+
+.amazingBox{
+    margin-top: 3rem;
+    width: 70vw;
+    height: 70vh;
+    padding-left: 2rem;
+    padding-top: 2rem;
+    position: relative;
+    z-index: -2;
+    background-color: white;
+}
+
+.recent{
+    font-family: 'Gotham Extra Narrow Black';
+    letter-spacing: 0.2rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+.nametour{
+    font-family: 'Gotham Extra Narrow Ultra';
+    font-size: 2.3rem;
+    margin-left: 0.9rem;
+    margin-top: 1rem;
+    line-height: 1em;
+    color: #231f20;
+}
+
+#logo{
+    margin:1.3rem 1rem;
+    height: 4.7rem;
+}
+
+.amazingChoices{
+    width: 20vw;
+    height: 70vh;
+    margin-top: 3rem;
+    margin-left: 1rem;
+}
+
+.chc{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    height: calc( (70vh - .4rem) /3);
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+    width: 15rem;
+    flex-direction: column;
+    transition: 300ms;
+}
+
+.chc:hover{
+    width: 18rem;
+}
+
+.chcjs:hover{
+    width: 18rem;
+}
+#amzDetail{
+    max-width: 28rem;
+    margin-top: 2rem;
+    margin-left: 1rem;
+}
+.chc:not(#last_chc){
+    margin-bottom: .2rem;
+}
+.amazing{
+    display: flex;
+}
+
+#sport-img{
+    width: 50%;
+    position: absolute;
+    right: -7rem;
+    top:8rem;
+    height: 90%;
+    z-index: -1;
+}
+
+.sportHeader{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.place{
+    font-size: 1.2rem;
+    color: rgb(180, 180, 39);
+}
+
+.clickChc{
+    background-color: #FFFFFF;
+    background-image: linear-gradient(135deg, #FFFFFF 0%, #6284FF 50%, #FF0000 100%);
+    width: 18rem;
+}
