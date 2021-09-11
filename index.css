@@ -15,7 +15,7 @@ body{
 }
 
 #wrapper-prevent-ox{
-    overflow-x: hidden;
+    overflow:hidden;
 }
 nav{
     display: flex;
