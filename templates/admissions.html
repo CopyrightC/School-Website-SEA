@@ -2,18 +2,21 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="../styles/contact.css">
     <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="../styles/contact.css">
     <meta charset="UTF-8">
-    <link rel="shortcut icon" href="https://moderndps89.com/web/assets/images/logo-145x183.png">
+    <style>
+
+    </style>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Document</title>
 </head>
 
 <body>
     <div class="wrapper-prevent-ox">
         <nav>
+
             <ul id="nav_ul">
                 <img src="https://moderndps89.com/web/assets/images/logo-145x183.png" id="navLogo" alt="">
                 <a class="link" href="/">
@@ -25,23 +28,37 @@
                 <a class="link" href="gallery.html">
                     <li class="li_nav">Gallery</li>
                 </a>
-                <a href="admissions.html">
-                    <button id="adm">Admissions</button>
-                </a>
+                <button id="adm">Admissions</button>
             </ul>
         </nav>
 
+
         <div class="conbody">
-            <h2 id="conhead">Got something to ask? We're just a text away.</h2>
-            <form class="cform">
-                <label for="Name">Name</label>
+            <h2 id="conhead">Admission page</h2>
+            <form class="cform" id="admform">
+                <label for="Name">Child's Name</label>
                 <input class="cinp" type="text" id="name" placeholder="Ex: Shourya">
                 <label for="Mail">Mail</label>
                 <input id="mail" type="text" class="cinp" placeholder="yourname@service.com">
                 <label for="Phone">Mobile Number</label>
                 <input type="text" id="mob" class="cinp" placeholder="Ex : 9426245xxx">
+                <label for="">Select the class in which admission is sought</label>
+                <select name="" id="">
+                    <option value="I">I</option>
+                    <option value="II">II</option>
+                    <option value="III">III</option>
+                    <option value="IV">IV</option>
+                    <option value="V">V</option>
+                    <option value="VI">VI</option>
+                    <option value="VII">VII</option>
+                    <option value="VIII">VIII</option>
+                    <option value="IX">IX</option>
+                    <option value="X" selected>X</option>
+                    <option value="XI">XI</option>
+                    <option value="XII">XII</option>
+                </select>
                 <label for="Des" class="cinp" id="dL" style="margin-bottom:1.5rem">Description</label>
-                <textarea id="des" placeholder="Describe your problem here..." cols="30" rows="10"></textarea>
+                <textarea placeholder="Give all the nesseccary details here..." cols="20" rows="5"></textarea>
                 <button id="submitnew">Submit</button>
             </form>
         </div>
@@ -50,6 +67,5 @@
         </footer>
     </div>
 </body>
-<script src="../App.js"></script>
 
 </html>

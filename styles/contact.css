@@ -27,8 +27,14 @@ body{
     margin:2rem;
     font-size: 2rem;
 }
+select{
+    width: 20vw;
+    margin-top: 2rem;
+    height: 4rem;
+    outline: none;
+}
 
-#cform{
+.cform{
     display: flex;
     position: relative;
     flex-direction: column;
