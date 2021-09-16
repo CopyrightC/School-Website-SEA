@@ -3,26 +3,50 @@
 
 <head>
     <link rel="stylesheet" href="../styles/contact.css">
+    <link rel="stylesheet" href="../index.css">
     <meta charset="UTF-8">
+    <link rel="shortcut icon" href="https://moderndps89.com/web/assets/images/logo-145x183.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact</title>
 </head>
 
 <body>
-    <div class="contact">
-        <div class="maincnc">
-            <h1 id="cnc_head">
-                Contact Us.
-                <br>
-                All it takes is two minutes.
-            </h1>
-            <textarea type="text" class="input" placeholder="First Name"></textarea>
-            <textarea type="text" class="input" placeholder="Last Name"></textarea>
-            <textarea type="text" class="input" placeholder="Email"></textarea>
-            <textarea type="text" class="input" placeholder="How can we help you?"></textarea>
+    <div class="wrapper-prevent-ox">
+        <nav>
+            <ul id="nav_ul">
+                <img src="https://moderndps89.com/web/assets/images/logo-145x183.png" id="navLogo" alt="">
+                <a class="link" href="/">
+                    <li class="li_nav">Home</li>
+                </a>
+                <a class="link" href="contact.html">
+                    <li class="li_nav">Contact</li>
+                </a>
+                <a class="link" href="gallery.html">
+                    <li class="li_nav">Gallery</li>
+                </a>
+                <button id="adm">Admissions</button>
+            </ul>
+        </nav>
+
+        <div class="conbody">
+            <h2 id="conhead">Got something to ask? We're just a text away.</h2>
+            <form id="cform">
+                <label for="Name">Name</label>
+                <input class="cinp" type="text" id="name" placeholder="Ex: Shourya">
+                <label for="Mail">Mail</label>
+                <input id="mail" type="text" class="cinp" placeholder="yourname@service.com">
+                <label for="Phone">Mobile Number</label>
+                <input type="text" id="mob" class="cinp" placeholder="Ex : 9426245xxx">
+                <label for="Des" class="cinp" id="dL" style="margin-bottom:1.5rem">Description</label>
+                <textarea id="des" placeholder="Describe your problem here..." cols="30" rows="10"></textarea>
+                <button id="submitnew">Submit</button>
+            </form>
+
+
         </div>
     </div>
 </body>
+<script src="../App.js"></script>
 
 </html>

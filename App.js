@@ -1,6 +1,12 @@
 let chc = document.getElementsByClassName("chc");
 let sportTitle = document.getElementById("titlesp");
 let sportImg = document.getElementById("sport-img");
+let submit = document.getElementById("submitnew");
+let formName = document.getElementById("name")
+let desc = document.getElementById("des");
+let mob = document.getElementById("mob")
+let mail = document.getElementById("mail");
+
 
 for (let i = 0; i < chc.length; i++) {
     chc[i].addEventListener('click', () => {
@@ -9,6 +15,28 @@ for (let i = 0; i < chc.length; i++) {
     }
     )
 }
+
+const handleSubmit = () => {
+    if (!mail.value || !formName.value || !mob.value || !desc.value) {
+
+        return false
+    }
+    return true
+}
+
+submit.addEventListener('click', (e) => {
+    e.preventDefault();
+    if (!handleSubmit()) {
+        alert("Please fill out all the fields.")
+    }
+    else {
+        window.open(`
+        https://mail.google.com/mail/u/0/?fs=1&to=shouryasinha001@gmail.com&su=Query regarding mdps89&body=${desc.value}&tf=cm
+        `)
+        mail.value = ""; formName.value = ""; mob.value = ""; desc.value = "";
+    }
+
+})
 
 const applyStyle = (elem) => {
 
