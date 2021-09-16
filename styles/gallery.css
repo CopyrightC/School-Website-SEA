@@ -1,0 +1,15 @@
+.galleryCnt{
+    display: flex;
+}
+.galleryCnt > img{
+    margin-right: 0.2rem;
+    width: calc(100vw / 3);
+    height:35vh;
+}
+
+.galleryHeader{
+    background-color: blanchedalmond;
+    width: 30vw;
+    padding: 1rem;
+    margin: 2rem 1rem;
+}
