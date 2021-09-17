@@ -8,36 +8,6 @@ let mob = document.getElementById("mob")
 let mail = document.getElementById("mail");
 
 
-for (let i = 0; i < chc.length; i++) {
-    chc[i].addEventListener('click', () => {
-        applyStyle(chc[i])
-        changeDetails(i)
-    }
-    )
-}
-
-const handleSubmit = () => {
-    if (!mail.value || !formName.value || !mob.value || !desc.value) {
-
-        return false
-    }
-    return true
-}
-
-submit.addEventListener('click', (e) => {
-    e.preventDefault();
-    if (!handleSubmit()) {
-        alert("Please fill out all the fields.")
-    }
-    else {
-        window.open(`
-        https://mail.google.com/mail/u/0/?fs=1&to=shouryasinha001@gmail.com&su=Query regarding mdps89&body=${desc.value}&tf=cm
-        `)
-        mail.value = ""; formName.value = ""; mob.value = ""; desc.value = "";
-    }
-
-})
-
 const applyStyle = (elem) => {
 
     for (let i = 0; i < chc.length; i++) {
@@ -60,3 +30,36 @@ const changeDetails = (i) => {
         sportImg.src = "https://th.bing.com/th/id/R.fdfbf66d4b5350e9bba4834c1471a780?rik=7tsW31nTQJpXnQ&riu=http%3a%2f%2ffightingreport.com%2fwp-content%2fuploads%2f2016%2f09%2fboxing-for-kids.jpg&ehk=GANPCt2tQQjcb3hcJtyss2dpHGUBwDdY8xG7ukve0Dw%3d&risl=&pid=ImgRaw&r=0"
     }
 }
+
+for (let i = 0; i < chc.length; i++) {
+    chc[i].addEventListener('click', () => {
+        applyStyle(chc[i])
+        changeDetails(i)
+    }
+    )
+}
+
+const handleSubmit = () => {
+    if (!mail.value || !formName.value || !mob.value || !desc.value) {
+
+        return false
+    }
+    return true
+}
+
+try {
+    submit.addEventListener('click', (e) => {
+        e.preventDefault();
+        if (!handleSubmit()) {
+            alert("Please fill out all the fields.")
+        }
+        else {
+            window.open(`
+        https://mail.google.com/mail/u/0/?fs=1&to=shouryasinha001@gmail.com&su=Query regarding mdps89&body=${desc.value}&tf=cm
+        `)
+            mail.value = ""; formName.value = ""; mob.value = ""; desc.value = "";
+        }
+
+    })
+}
+catch { }
