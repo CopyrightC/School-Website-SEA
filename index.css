@@ -12,13 +12,10 @@ html{
 }
 
 body{
-  
+    overflow-x: hidden;
     background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
 }
 
-.wrapper-prevent-ox{
-    overflow-x:hidden;
-}
 
 nav{
     display: flex;
