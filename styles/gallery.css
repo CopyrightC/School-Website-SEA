@@ -1,12 +1,16 @@
 .galleryCnt{
     display: flex;
+    padding-left: 0.3rem;
 }
 .galleryCnt > img{
     margin-right: 0.2rem;
-    width: calc(100vw / 3);
+    width: calc(97.7vw / 3);
     height:35vh;
+    transition: 200ms;
 }
-
+.galleryCnt > img:hover{
+    padding: 1rem;
+}
 .galleryHeader{
     background-color: blanchedalmond;
     width: 30vw;
