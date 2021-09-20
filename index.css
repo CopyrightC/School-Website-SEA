@@ -16,7 +16,6 @@ body{
     background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
 }
 
-
 nav{
     display: flex;
     width: 100%;
@@ -67,9 +66,9 @@ button{
 
 .styledBtn{
     width: 10rem;
-    height: 3rem;
+    height: 4rem;
     background-color: rgb(238, 235, 232);
-    border-radius: 0.3rem;
+    border-radius: 0.4rem;
     position: relative;
     overflow: hidden;
     z-index: 1;
@@ -105,6 +104,7 @@ button{
     width: 13rem;
     position: relative;
 }
+
 .item:not(#last):after{
     content: '';
     position: absolute;
@@ -122,9 +122,11 @@ button{
     left: 1.6rem;
     top: 0.7rem;
 }
+
 #navLogo:hover{
     cursor: pointer;
 }
+
 .first{
     width: 100%;
     display: flex;
@@ -137,12 +139,14 @@ button{
     background-position: center;
     background-size: cover;
 }
+
 #nav_ul{
     display: flex;
     list-style: none;
     align-items: center;
     margin: 0 auto;
 }
+
 #adm{
     width:10rem;
     position: absolute;
@@ -175,6 +179,7 @@ button{
 #adm:hover::before{
     transform: translateX(0);
 }
+
 .li_nav{
     margin-left: 2rem;
     padding: 1rem;
@@ -219,14 +224,12 @@ button{
     transform: translateX(0);
 }
 
-
 .li_nav:hover::before{
     z-index: 1;
     background-color: #4158D0;
     background-image: linear-gradient(100deg, #FFCC70 6%, #C850C0 46%, #4158D0 0%);
     transform: translateX(0);
 }
-
 
 .second{
     width: 100%;
@@ -239,10 +242,11 @@ button{
 #boyRas{
     position: absolute;
     right: 0;
-    height: 100vh;
+    height: 94vh;
     width: 40vw;
     top: 0rem;
 }
+
 #sec_main{
     font-size: 2rem;
     background-color: rgb(211, 197, 197);
@@ -252,6 +256,7 @@ button{
     border-radius: 0.5rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
 .content{
     width: 60vw;
     display: flex;
@@ -261,7 +266,6 @@ button{
 
 #longlongdetail{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-left: 1rem;
     overflow: hidden;
     font-size: 1.15em;
     width: 52vw;
@@ -314,6 +318,7 @@ button{
     margin-top: 1rem;
     margin-left: 1rem;
 }
+
 .nametour{
     font-family: 'Gotham Extra Narrow Ultra';
     font-size: 2.3rem;
@@ -358,9 +363,11 @@ button{
     margin-top: 2rem;
     margin-left: 1rem;
 }
+
 .chc:not(#last_chc){
     margin-bottom: .2rem;
 }
+
 .amazing{
     display: flex;
 }
@@ -377,6 +384,7 @@ button{
 .sportHeader{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
 .place{
     font-size: 1.2rem;
     color: rgb(180, 180, 39);
@@ -397,6 +405,7 @@ button{
     justify-content: center;
     align-items: center;
 }
+
 #video{
     width: 100vw;
     height: 100%;
@@ -424,15 +433,147 @@ footer{
     height: 20vh;
     background-color: rgb(47, 46, 44);
 }
+
+.links{
+    display: flex;
+}
+
 .link{
     text-decoration: none;
     color: inherit;
 }
-.githubLink{
+
+#facebook{
+    width: 2.4rem;
+    height: 2.8rem;
+}
+#git{
+    top:2.4rem;
+    height: 4.3rem;
+    width: 4rem;
+    bottom: 2rem;
+}
+
+#upscroll{
+    width: 5rem;
+    height: 5rem;
+    background-color: rgb(37, 34, 34);
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 5;
+    color: white;
+    display: flex;
+    align-items: center;
+    transition: 200ms;
+    justify-content: center;
+    font-size: 3rem;
+}
+
+#upscroll:hover{
+    cursor: pointer;
+    padding: 3rem;
+    background-color: rgb(40, 112, 141);
+}
+
+#yt{
+    margin-left: 0.7rem;
+    top:2.6rem;
+    width:3rem;
+}
+.footerImg{
     width: 3.7rem;
+    height: 3.7rem;
     position: relative;
     top: 3rem;
 }
+
+
+.founder-content{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+}
+.founders{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #D9AFD9;
+background-image: linear-gradient(0deg, #e6e6e6 0%, #d2e5e7 100%);
+
+    z-index: -2;
+    margin: 1rem;
+    height: 100vh;
+    border-radius: 0.4rem;
+    padding-top: 4rem;
+}
+#header{
+    display: flex;
+    margin-bottom: 3rem;
+    border-radius: 0.3rem;
+    padding:2rem;
+    align-items: center;
+    justify-content: center;
+    font-family: 'fira code';
+    background-color: blanchedalmond;
+    width: 20vw;
+    height: 3rem;
+}
+
+.founder-item{
+    width: 40vw;
+    margin-left: 2rem;
+    height: 50vh;
+    position: relative;
+    background-color: rgb(255, 253, 253);
+}
+
+.founder-item > img{
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.founder-item:hover::after{
+   transform: translateY(30%);
+}
+.founder-item{
+    font-size: 1.2rem;
+    display: flex;
+  
+}
+.founder-item::after{
+    padding:0 1rem;
+    content: 'Modern Delhi Public School, Faridabad has made Faridabad extremely proud with its lofty ideals and wonderful achievements. It has carved a niche for itself in a short span of just Four years. It has built for itself a reputation, few can match. All this could be achieved through vision.';
+    transition: 200ms;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 3.6em;
+    color: white;
+    background-color: rgb(61, 67, 73);
+    position: absolute;
+    bottom: -4rem;
+    left: 4vw;
+}
+
+.founder-title{
+    display: inline;
+    margin-bottom: 2em;
+    background-color: blanchedalmond;
+    padding:1rem;
+    border-radius: 0.3rem;
+    font-family: 'fira code';
+}
+.names{
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+}
+
 
 /* media queries */
 

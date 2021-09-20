@@ -2,15 +2,19 @@
     display: flex;
     padding-left: 0.3rem;
 }
+
 .galleryCnt > img{
     margin-right: 0.2rem;
     width: calc(97.7vw / 3);
+    box-shadow: 1rem 0.5rem 0.4rem rgba(107, 100, 100, 0.5);
     height:35vh;
     transition: 200ms;
 }
+
 .galleryCnt > img:hover{
     padding: 1rem;
 }
+
 .galleryHeader{
     background-color: blanchedalmond;
     width: 30vw;
