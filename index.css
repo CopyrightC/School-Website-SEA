@@ -16,6 +16,12 @@ body{
     background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
 }
 
+::-webkit-scrollbar {width: 10px;}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(39, 38, 38);
+    border-radius: 1rem;
+}
+
 nav{
     display: flex;
     width: 100%;
@@ -267,10 +273,11 @@ button{
 #longlongdetail{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     overflow: hidden;
-    font-size: 1.15em;
+    font-size: 1.75vh;
     width: 52vw;
     height: 80vh;
     padding: 3rem;
+    overflow-y: scroll;
     border-radius: .3rem;
     position: absolute;
     margin-top: 10rem;
@@ -358,10 +365,12 @@ button{
 }
 
 #amzDetail{
-    font-size: 1.16em;
+    font-size: 1.8vh;
     max-width: 33vw;
     margin-top: 2rem;
     margin-left: 1rem;
+    overflow:hidden;
+    padding-bottom: 2rem;
 }
 
 .chc:not(#last_chc){
@@ -522,9 +531,11 @@ background-image: linear-gradient(0deg, #e6e6e6 0%, #d2e5e7 100%);
 }
 
 .founder-item{
-    width: 40vw;
+    width: 40rem;
     margin-left: 2rem;
-    height: 50vh;
+    font-size: 1.2rem;
+    display: flex;
+    height: 30rem;
     position: relative;
     background-color: rgb(255, 253, 253);
 }
@@ -536,19 +547,15 @@ background-image: linear-gradient(0deg, #e6e6e6 0%, #d2e5e7 100%);
 }
 
 .founder-item:hover::after{
-   transform: translateY(30%);
+   transform: translateY(35%);
 }
-.founder-item{
-    font-size: 1.2rem;
-    display: flex;
-  
-}
+
 .founder-item::after{
     padding:0 1rem;
     content: 'Modern Delhi Public School, Faridabad has made Faridabad extremely proud with its lofty ideals and wonderful achievements. It has carved a niche for itself in a short span of just Four years. It has built for itself a reputation, few can match. All this could be achieved through vision.';
     transition: 200ms;
     width: 80%;
-    height: 80%;
+    height: 20rem;
     display: flex;
     justify-content: center;
     align-items: flex-end;
